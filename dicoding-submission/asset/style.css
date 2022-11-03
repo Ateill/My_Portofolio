@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Dancing+Script:wght@400;600&family=Quicksand:wght@300;400;700&display=swap');
+
+@media screen and (max-width: 604px) {
+  nav li a, .dropbtn{
+    margin: auto;
+    padding: 3%;
+  }
+
+  #content, aside{
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .today-content{
+    width: 100% !important;
+  }
+
+  .today-main p, .today-center{
+    padding-left: 20px;
+  }
+
+  .today-main a{
+    font-size: 15px;
+  }
+
+  .today-main .ahi-img{
+    padding-left: 20px;
+    width: 95%;
+  }
+
+  .today-main .judul{
+    text-align: center;
+    width: 97%;
+    padding-left: 20px;
+  }
+
+  .today-main p{
+    padding: 20px;
+  }
+
+  .coffee{
+    width: 100%;
+  }
+
+  .numb, .email{
+    display: none;
+  }
+
+  #contact{
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 605px) and (max-width: 1250px){
+  #content, aside{
+    width: 100% !important;
+    padding: 0;
+  }
+
+  nav li a, .dropbtn{
+    padding: 7%;
+  }
+
+  .today-content{
+    width: 100%;
+    margin: 0% auto;
+  }
+
+  .today-main a{
+    font-size: 25px;
+  }
+
+  .news-content .judul{
+    margin-right: 100px;
+  }
+
+  .coffee, .news-content{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1250px){
+  .today-content{
+    padding-left: 22%;
+  }
+
+  .today-center{
+    padding: 20px;
+  }
+
+  nav{
+    text-align: center;
+  }
+
+  nav li a, .dropbtn{
+    padding: 10%;
+  }
+
+  #contact p{
+    display: inline-flex;
+  }
+
+  .numb{
+    float: left;
+  }
+
+  .email{
+    float: right;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Charis SIL';
+  background-color: #dae4e9;
+}
+
+main {
+  overflow: auto;
+}
+
+#content{
+  width: 70%;
+  float: right;
+}
+
+/*CSS Header*/
+header{
+  display: inline;
+}
+
+.logo h2{
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Dancing Script';
+  color: #232329;
+}
+
+nav{
+  top: 0;
+  position: sticky;
+  margin-top: -20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #232329;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav li{
+  display: inline;
+  margin: auto;
+}
+
+nav li a{
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: #6a6ac7;
+}
+
+.dropbtn{
+  background-color: #232329;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #6a6ac7;
+}
+
+#myInput{
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus{outline: 3px solid #ddd;}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  margin-right: 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover{background-color: #ddd;}
+
+.show{display: block;}
+
+/*CSS Main*/
+#content {
+  margin-top: 25px;
+}
+
+/*CSS untuk halaman Lamun*/
+.article-lamun{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: beige;
+  border-radius: 15px;
+}
+
+.lamun{
+  margin-top: 80px;
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  display: table;
+  margin: 0 auto;
+}
+
+.judul-lamun{
+  text-align: center;
+}
+
+figcaption{
+  margin-top: 2px;
+  font-size: 12px;
+  font-style: italic;
+  color: #626266;
+  text-align: center;
+}
+
+.isi-lamun{
+  margin-top: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#more {
+  bottom: 0;
+  display: none;
+}
+
+#btn-cmore{
+  text-decoration: underline;
+  color: black;
+  font-size: 15px;
+  border: none;
+  background: none;
+  max-height:100%;
+  max-width: 100%;
+  display: table;
+  margin: auto;
+}
+
+#btn-cmore:hover{
+  color: #6a6ac7;
+}
+
+/*CSS Artikel Hari Ini*/
+#today-article{
+  margin-top: 40px;
+  background-color: beige;
+  border-radius: 15px;
+}
+
+.today-title{
+  font-size: 25px;
+  text-align: center;
+  color: #232329;
+}
+
+.today-content{
+  display: inline-block;
+}
+
+.today-content a, .today-content p{
+  color: #232329; 
+  text-decoration: none;
+}
+
+.today-content a:hover{
+  color: #6a6ac7;
+}
+
+.today-main{
+  margin-top: 10px;
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.today-main .judul{
+  margin: auto;
+}
+
+.today-center{
+  display: inline-block;
+  margin-top: 30px;
+  padding-bottom: 25px;
+}
+
+.today-center .bawah{
+  margin-top: 50px;
+}
+
+#arini .ahi{
+  margin-top: -30px;
+}
+
+#arini h3{
+  padding-bottom: 20px;
+}
+
+.ahi-img{
+  width: 500px;
+}
+
+.ahi img{
+  object-fit: fill;
+}
+
+.ahi-side{
+  width: 150px;
+}
+
+.text .judul{
+  float: left;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.ahi a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.ahi a:hover{
+  color: #7a718d;
+}
+
+.judul-side{
+  font-size: 15px;
+}
+
+.text .waktu{
+  font-size: 14px;
+}
+
+.waktu-side{
+  margin-top: -1px;
+  font-size: 12px;
+}
+
+
+/*CSS Popular News*/
+aside{
+  float: left;
+  margin-top: 25px;
+  width: 25%;
+  border-radius: 15px 15px 0 0;
+  background-color: beige;
+}
+
+.popular-news h3{
+  text-align: center;
+}
+
+.news-content{
+  padding: 10px 30px 10px 20px;
+  margin: auto;
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  display: table;
+}
+
+.news-content:hover{
+  background-color: #ddd;
+  border-bottom: 15px;
+}
+
+.news-content .covid{
+  width: 250px;
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  display: table;
+  margin: auto;
+}
+
+.news-content .judul{
+  color: #000000;
+  font-size: 15px;
+}
+
+.news-content.judul-kcl{
+  color:#000000;
+  font-size: 13px;
+  clear: left;
+  margin-top: 20px;
+}
+
+.news-content .tanggal{
+  font-size: 12px;
+  color: #000000;
+  margin-top: 20px;
+  text-align: end;
+}
+
+.news-content a{
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-content a:hover{
+  color: #6a6ac7;
+}
+
+.news-content{
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  display: table;
+}
+
+.coffee{
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  display: table;
+}
+
+.biji-kopi{
+  height: 70px;
+  width: 70px;
+  margin-top: 3px;
+  margin-left: -5px;
+  padding: 5px;
+  float: left;
+}
+
+.gambar{
+  height: 70px;
+  width: 70px;
+  margin-top: 3px;
+  margin-left: -5px;
+  padding: 5px;
+  float: left;
+  max-height:100%;
+  max-width: 100%;
+  height: auto;
+  display: table;
+}
+
+/*CSS Profile*/
+#profile{
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #28282e;
+  border-radius: 15px 15px 0 0;
+}
+
+#profile .bulat{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profile h4{
+  margin-top: 10px;
+}
+
+#profile p{
+  margin-top: -10px;
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(185, 184, 184);
+}
+
+/*CSS untuk footer*/
+footer{
+  clear: both;
+  height: 500px;
+  padding: 15px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #232329;
+  background-position: center;
+}
+
+/*CSS Subscribe*/
+#subscribe{
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 5px;
+  background-color: #4c4c5f;
+}
+
+#subscribe h4{
+  color: white;
+  font-size: 30px;
+}
+
+#email{
+  width: 250px;
+  height: 25px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-button{
+  height: 35px;
+  width: 105px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: none;
+  background-color: #a70e0e;
+  box-shadow: 1px 0 10px 0 #2f2f41;
+  color: white;
+  cursor: pointer;
+}
+
+.subscribe-button:hover{
+  height: 38px;
+  width: 108px;
+  background-color: #be1414;
+}
+
+/*CSS Find Us*/
+.find-us{
+  color: white;
+}
+
+.logo-fb, .logo-tw{
+  height: 25px;
+}
+
+.logo-fb:hover{
+  height: 30px;
+  cursor: pointer;
+}
+
+.logo-tw:hover{
+  height: 30px;
+  cursor: pointer;
+}
+
+/*CSS Contact Me*/
+#contact{
+  font-size: 12px;
+  position: relative;
+  bottom: 0;
+  margin-top: -10px;
+  color: white;
+}
