@@ -1,0 +1,11 @@
+require('jquery');
+require('slick-carousel');
+import 'regenerator-runtime';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import './scss/styles.scss';
+import './scss/slickfix.scss';
+import 'font-awesome/css/font-awesome.css';
+import './scss/style.css';
+import './scripts/navbar.js';
+import './scripts/movies.js';
+import './scripts/footer.js';
