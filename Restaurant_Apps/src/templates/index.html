@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie || Restaurant Apps</title>
+  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <h1 class="app-logo">Foodie</h1>
+    
+    <a id="skipContent" alt="skip_to_content" href="#content-text">Skip to Content</a>
+
+    <div class="app-navbar">
+      <ul>
+        <li><a href="/index.html" class="navbar-home">Home</a></li>
+        <li><a href="#" class="navbar-favorite">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/paulieta-gracia/" class="navbar-about">About Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+  <div class="toggle">
+    <a href="#" class="toggle-button" onclick="toggleBtn()">
+      <span class="bar"></span>
+    </a>
+    
+    <div class="toggle-navbar">
+      <ul>
+        <li><a href="/index.html" class="navbar-home" id="navbar-home">Home</a></li>
+        <li><a href="#" class="navbar-favorite" id="navbar-favorite">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/paulieta-gracia/" class="navbar-about" id="navbar-about">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <content>
+    <div class="hero">
+      <img class="hero-img" src="./images/heros/hero-image_2.jpg" alt="food-picture">
+      <div class="hero-text">
+        <p class="welcome-text">Welcome</p>
+        <p class="to-text">to</p>
+        <h1 class="hero-logo">Foodie</h1>
+      </div>
+    </div>
+
+    <p class="content-text" id="content-text">Explore Restaurant</p>
+    <!-- Use JSON Server To Get Datas => json-server --watch DATA.json -->
+    <div class="restaurant-container">
+      <div id="restaurant-list"></div>
+    </div>
+  </content>
+
+  <footer>
+    <p>Copyright ©2022 Paulieta Gracia Lim - Foodie Apps</p>
+  </footer>
+</body>
+</html>
