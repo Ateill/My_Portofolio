@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Header CSS */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FDB137;
+  color: #f9f8f3;
+}
+
+#skipContent {
+  background-color: #e26600;
+  color: #f9f8f3;
+  text-decoration: none;
+  height: 60px;
+  transform: translateX(-50%);
+  padding: 20px;
+  transform: translateY(-150%);
+  transition: transform 0.3s;
+}
+
+#skipContent:focus {
+  transform: translateY(0%);
+  outline: 1px solid #e26600;
+}
+
+.app-logo {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 2rem;
+  margin: .5rem;
+}
+
+.app-navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.app-navbar ul li {
+  list-style: none;
+}
+
+.app-navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  color: #f9f8f3;
+}
+
+.app-navbar ul li a:focus {
+  background-color: #e26600;
+  outline: 2px solid #e26600;  
+}
+
+.app-navbar ul li:hover {
+  background-color: #e26600;
+}
+
+/* Toggle CSS */
+.toggle {
+  display: none;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+}
+
+.toggle-button:focus {
+  outline: 2px solid #e26600;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #f9f8f3;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+  margin-top: 5px;
+}
+
+.toggle-button .bar::before, 
+.toggle-button .bar::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #f9f8f3;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.toggle-button .bar::before {
+  transform: translateY(12px);
+}
+
+.toggle-button .bar::after {
+  transform: translateY(24px);
+}
+
+.toggle-button.open .bar::before {
+  transform: rotate(-90deg) translateX(50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.toggle-button.open .bar {
+  transform: rotate(45deg) translate(5px, 12px);
+  transition: all .5s ease-in-out;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.toggle-button.open .bar::after {
+  transform: rotate(-90deg) translate(0px, 0px);
+}
+
+.toggle .toggle-navbar {
+  width: 150px;
+  height: 200px;
+  margin-top: 54px;
+  right: 0;
+  top: 0px;
+  position: absolute;
+  transition-duration:.8s;
+  transform: translate(0px -90px);
+  background-color:#FDB137;
+}
+
+.toggle .toggle-navbar ul {
+  flex-direction: column;
+  list-style-type: none;
+  padding: 5px 5px;
+}
+
+.toggle .toggle-navbar li {
+  padding: 8px 0px;
+  border-bottom: 2px solid #F9F8F3;
+}
+
+.toggle .toggle-navbar a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #f9f8f3;
+  display: inline-block;
+  padding: 10px;
+  width:140px;
+  height: 44px;
+}
+
+.toggle .toggle-navbar a:focus {
+  outline: 2px solid #e26600;
+  background-color: #e26600; 
+}
+
+.toggle-navbar ul li:hover {
+  background-color: #e26600;
+}
+
+/* Jumbotron CSS */
+.hero {
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 50px;
+  font-weight: 500;
+  color: #1B1A17;
+}
+
+.to-text {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: -10px;
+  color: #1B1A17;
+}
+
+.hero-logo {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 3rem;
+  color: #FDB137;
+  margin-top: -12px;
+}
+
+.hero-text {
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-top: 8em;
+  background-color: #ffffff;
+  color: #1B1A17;
+}
+
+/* Card CSS */
+.restaurant-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurant-list {
+  padding: 6rem 0px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+#restaurant-list .card-container {
+  width: 22rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+}
+
+.content-text {
+  margin-top: 4em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.resto-img {
+  width: 21.9rem;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  object-fit: fill;
+  padding: 5px;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: justify;
+}
+
+.card-title {
+  font-size: 2.1rem;
+  color: #1B1A17;
+  text-decoration: none;
+  width: 286px;
+  height: 44px;
+}
+
+.card-title:hover {
+  color: #e26600;
+  text-decoration: underline;
+}
+
+.card-title:focus {
+  outline: none;
+  color: #e26600;
+  text-decoration: underline;
+}
+
+.card-rating {
+  margin-top: 2px;
+  font-size: 18px;
+  color: #1B1A17;
+}
+
+.card-city {
+  margin-top: 1px;
+  font-size: 18px;
+  color: #1B1A17;
+}
+
+.card-description {
+  margin-top: 1em;
+}
+
+/* Detail Restaurant */
+.detail-containe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#detail-restaurant {
+  margin-top: 5rem;
+  border-radius: 10px;
+}
+
+.restaurant_title {
+  font-size: 2.1rem;
+  color: #1B1A17;
+  text-align: center;
+  font-family: 'Dancing Script', cursive !important;
+}
+
+.restaurant_label {
+  font-size: 2.1rem;
+  color: #FDB137;
+  text-align: center;
+  font-family: 'Dancing Script', cursive !important;
+}
+
+hr {
+  margin: 15px 80px;
+  border: none;
+  border-top: 3px double #1B1A17;
+  color: #1B1A17;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+#detail_container {
+  padding: 6rem 4rem;
+  display: grid;
+  justify-content: center !important;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#detail-restaurant .restaurant_poster {
+  width: 30rem;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: fill;
+  padding: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 15px;
+}
+
+.restaurant_info {
+  margin-left: 50px;
+  width: 25rem;
+  color: #1B1A17;
+}
+
+.information_label {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.name_label, .address_label, .rating_label, .description_label {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.restaurant_address, .restaurant_rating, .restaurant_description {
+  margin-top: 20px;
+}
+
+.restaurant_name:focus, .restaurant_address:focus, .restaurant_rating:focus,
+.description:focus, #restaurant_food:focus, #restaurant_beverage:focus {
+  outline: 1px solid #FDB137;
+}
+
+.address_name, .rating, .description {
+  margin-top: 2px;
+}
+
+.description {
+  text-align: justify;
+}
+
+.menu_label {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 80px;
+}
+
+#menu_container {
+  padding: 1rem 3rem;
+  display: grid;
+  justify-content: center !important;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.food_container, .beverage_container {
+  margin-top: 3rem;
+  width: 200px;
+}
+
+#restaurant_food, #restaurant_beverage {
+  padding-top: 10px;
+  list-style-type: square;
+  list-style: inside;
+}
+
+#restaurant_food li, #restaurant_beverage li {
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 20%;
+}
+
+.food_label, .beverage_label {
+  font-weight: normal;
+  text-align: center;
+}
+
+#restaurant_review {
+  width:100%;
+  display: grid;
+  justify-content: center !important;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.review_label {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+
+.template-container {
+  width: 35rem;
+  height:120px;
+  border: 1px solid #FDB137;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FDB137;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.reviewer-name {
+  color: #F9F8F3;
+}
+
+.review-date {
+  color: #F9F8F3;
+  font-size: 13px;
+}
+
+.review-content {
+  padding: 10px;
+}
+
+.the-review {
+  margin-top: 15px;
+}
+
+/* Like */
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 20px;
+  right: 45px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Favorite Page */
+.favorite_heading {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.1rem;
+  color: #1B1A17;
+  margin-top: 1.5rem;
+}
+
+.favorite-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#not_found {
+  display: grid;
+  justify-content: center !important;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 5rem;
+}
+
+.not_found_img {
+  width: 600px !important;
+}
+
+.nullnotif {
+  text-align: center;
+  color: #1B1A17;
+  font-weight: normal;
+}
+
+/* Footer CSS */
+footer {
+  text-align: center;
+  padding: .5rem;
+  margin-top: 5rem;
+  height: 35px;
+  background-color: #FDB137;
+  color: #f9f8f3;
+}
