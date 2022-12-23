@@ -5,9 +5,9 @@ const Like = {
   async render() {
     return `
         <h2 class="favorite_heading">Favorite Movie</h2>
-        <div class="favorite-content">
-            <div id="restaurant-list" class="restaurant-list"></div>
-            <div id="not_found"></div>
+        <div class="favorite-content" id="favorite-content">
+            <div id="restaurant-list" class="restaurant-list" tabindex="0"></div>
+            <div id="not_found" tabindex="0"></div>
         </div>
     `;
   },

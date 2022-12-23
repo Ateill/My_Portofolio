@@ -221,12 +221,20 @@ header {
   justify-content: center;
 }
 
+#restaurant-container:focus {
+  outline: 1px solid #FDB137;
+}
+
 #restaurant-list {
   padding: 6rem 0px;
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+}
+
+#favorite-content:focus {
+  outline: 1px solid #FDB137;
 }
 
 #restaurant-list .card-container {
@@ -356,6 +364,10 @@ figcaption {
   text-align: center;
   margin-bottom: 20px;
   font-weight: normal;
+}
+
+.information_label:focus {
+  outline: 1px solid #FDB137 ;
 }
 
 .name_label, .address_label, .rating_label, .description_label {

@@ -6,11 +6,11 @@ const RestaurantDetailTemplate = (restaurant) => `
   <hr>
   <div id="detail_container">
     <div class="poster-container">
-        <img class="restaurant_poster" src="${CONFIG.Get_image + restaurant.pictureId}" alt="${restaurant.title}" />
+        <img class="restaurant_poster" src="${CONFIG.Get_image + restaurant.pictureId}" alt="${restaurant.name}" />
         <figcaption>${restaurant.name} Restaurant</figcaption>
     </div>
     <div class="restaurant_info">
-        <h2 class="information_label">Restaurant Information :</h2>
+        <h2 class="information_label" id="information_label" tabindex="0">Restaurant Information :</h2>
         <div class="restaurant_name" tabindex="0">
             <h3 class="name_label">Restaurant Name :</h3>
             <p class="restaurant_name">${restaurant.name}</p>
@@ -61,7 +61,7 @@ const BaverageTemplate = (beverageParse) => `
 `;
 
 const ReviewTemplate = (reviewParse) => `
-    <div class="template-container" tabindex="0">
+    <div class="template-container">
         <div class="review-header">
             <p class="reviewer-name">${reviewParse.name}</p>
             <p class="review-date">${reviewParse.date}</p>

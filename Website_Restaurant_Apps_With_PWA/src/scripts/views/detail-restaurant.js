@@ -16,7 +16,7 @@ const Detail = {
   async render() {
     return `
       <div class="detail-container">
-          <div id="detail-restaurant"></div>
+          <div id="detail-restaurant" tabindex="0"></div>
           <div id="likeButtonContainer"></div>
       </div>
     `;
