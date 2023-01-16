@@ -1,0 +1,48 @@
+{
+  "icons": [
+    {
+      "src": "auto/icon_1256x1256.a9cecef4e1a1465169062232d0de8575.png",
+      "sizes": "1256x1256",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/icon_512x512.43e1965b6d5a84d7a94bbd9f5d131144.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/icon_256x256.43917e8a1536b353d56760601421fd54.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/icon_128x128.fe285378daca8670f35b86fa66d8693b.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/icon_64x64.e37b5f68c54d867864ec6178a0ab5dff.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/icon_24x24.08487ac1ff1e2946499070a725ce12d3.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/icon_16x16.aee8cf918b52b5ee68ccce18fa35567a.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "name": "Foodie.org",
+  "short_name": "Foodie.org",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "../index.html",
+  "id": "Application-Foodie",
+  "description": "The best place to find the best restaurant",
+  "theme_color": "#FDB137",
+  "background_color": "#f9f8f3"
+}

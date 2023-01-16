@@ -1,0 +1,47 @@
+{
+    "id": "Application-Foodie",
+    "name": "Foodie.org",
+    "short_name": "Foodie.org",
+    "theme_color": "#FDB137",
+    "background_color": "#f9f8f3",
+    "start_url": "../index.html",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "../public/logos/logo16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "../public/logos/logo24x24.png",
+        "sizes": "24x24",
+        "type": "image/png"
+      },
+      {
+        "src": "../public/logos/logo64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      },
+      {
+        "src": "../public/logos/logo128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "../public/logos/logo256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "../public/logos/logo512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      
+      {
+        "src": "../public/logos/logo1256x1256.png",
+        "sizes": "1256x1256",
+        "type": "image/png"
+      }
+    ]
+  }
